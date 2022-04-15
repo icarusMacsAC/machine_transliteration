@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}">
     <script src="{% static 'js/materialize.min.js' %}"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>Machine Transliteration</title>
+    <title>Image Caption with Machine Translation</title>
 {% block style %}
     <style>
         body{
@@ -155,10 +155,9 @@
           
         <div class="sidebar">
           <header>
-              <li><a href="{% url 'index' %}"><i class="fab fa-google-wallet"></i> Machine Transliteration</a></li>
+              <li><a href="{% url 'index' %}"><i class="fas fa-image"></i> Image Caption</a></li>
           </header>
           <ol>
-            <li><a href="https://amitimg2txt.herokuapp.com/" style="font-size: x-large;"><i class="fas fa-image"></i> Image Caption</a></li>
             <li><a href="https://amitimg2captdotcom.wordpress.com/"><i class="fas fa-blog"></i> Blog</a></li>
             <li><a href="{% url 'technology' %}"><i class="fas fa-laptop"></i> Technology</a></li>
             <li><a href="{% url 'projects' %}"><i class="fas fa-project-diagram"></i> Project</a></li>
@@ -172,10 +171,9 @@
     </nav>
     <nav class="nav1" >
         <div class="nav-wrapper col s12 m2">
-            &nbsp&nbsp<a href="{% url 'index' %}" class="brand-logo"><i class="fab fa-google-wallet"></i>Machine Transliteration</a>
+          <a href="{% url 'index' %}" class="brand-logo"><i class="material-icons">image</i>Image Caption</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="https://amitimg2txt.herokuapp.com/" style="font-size: x-large;"><i class="fas fa-image"></i> Image Caption</a></li>
             <li><a href="https://amitimg2captdotcom.wordpress.com/"><i class="fas fa-blog"></i> Blog</a></li>
             <li><a href="{% url 'technology' %}"><i class="fas fa-laptop"></i> Technology</a></li>
             <li><a href="{% url 'projects' %}"><i class="fas fa-project-diagram"></i> Project</a></li>

@@ -5,12 +5,13 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('index', views.index, name='index'),
-    path('', views.index, name='index'),
+    path('index2', views.index2, name='index2'),
     path('result', views.result, name='result'),
+    path('res', views.res, name='res'),
+    path('', views.index, name='index'),
+    path('about_me', views.about_me, name='about_me'),
     path('technology', views.technology, name='technology'),
-    path('projects', views.projects, name='projects'),
-    # path('technology', views.technology, name='technology'),
-    # path('projects', views.projects, name='projects')
+    path('projects', views.projects, name='projects')
 ] 
 
 if settings.DEBUG:
